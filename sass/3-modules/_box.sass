@@ -1,0 +1,112 @@
+@use 'modules-mixins'
+@use '../1-base/_variables'
+
+.box
+    &-login
+        @include modules-mixins.box
+        border: 1px solid variables.$secondary-color
+        flex-direction: column
+
+        input
+            width: 260px
+            height: 36px
+            background-color: #FAFAFA
+            padding: 9px 0 7px 8px
+            margin: 0 40px 6px 40px
+
+        img
+            width: 174px
+            height: 50px
+            margin: 36px 0 32px 0
+
+        &-bottom 
+            border-top: 1px solid variables.$secondary-color
+            width: 260px
+            margin: 10px 40px 12px 40px
+            text-align: center
+            position: relative
+            padding: 10px 0
+            display: flex
+            flex-direction: column
+
+            p
+                width: 60px
+                background-color: #fff 
+                position: absolute
+                font-size: 13px
+                font-weight: 600
+                top: -6px
+                left: 100px
+
+            i
+                margin-right: 10px
+
+            a
+                margin: 28px 0 0 0
+                color: variables.$link-color
+                font-size: 12px
+            
+            .icone
+                font-weight: 600
+                font-size: 14px
+
+    &-cadastrar
+        @include modules-mixins.box
+        border: 1px solid variables.$secondary-color
+        padding: 20px
+        justify-content: center
+
+        a
+            color: variables.$btn-color
+            font-weight: 600
+
+    &-download
+        @include modules-mixins.box
+        flex-direction: column
+
+        p
+            font-size: 14px
+            margin-bottom: 12px
+
+        img
+            width: 140px
+            height: 55px
+            
+        &-images
+            display: flex
+            align-items: center
+
+            .microsoft
+                width: 120px
+                height: 43px
+                border-radius: 1px
+                margin-left: 8px
+
+    &-nav
+        @include modules-mixins.box
+        width: 100%
+        justify-content: center
+        flex-wrap: wrap
+        
+        a
+            margin: 10px
+            font-size: 14px
+
+    &-copyright
+        @include modules-mixins.box
+        width: 100%
+        justify-content: center
+        flex-wrap: wrap
+        margin: 10px
+        font-size: 14px
+        color: variables.$primary-color
+
+        select
+            background-color: #fff
+            margin: 0 5px
+            width: 15px
+            border: 1px solid #fff
+            outline: none
+
+        
+
